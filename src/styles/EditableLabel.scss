@@ -1,0 +1,24 @@
+.editable-label {
+  &__label {
+
+  }
+
+  &__input {
+    border: none;
+    background: transparent;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+
+    &:focus {
+      outline-color: blue;
+      outline-width: 3px;
+      outline-offset: 2px;
+    }
+
+    &::selection,
+    &::-moz-selection {
+      background: blue;
+    }
+  }
+}

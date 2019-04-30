@@ -1,0 +1,83 @@
+.CardList-actions {
+  opacity: 0;
+  transition: opacity 0.1s;
+
+  button {
+    opacity: 0.6;
+    margin-right: 10px;
+    font-weight: bold;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg {
+      width: 15px;
+      height: auto;
+      pointer-events: none;
+    }
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+
+  svg.icon-edit {
+
+  }
+
+  svg.icon-delete {
+    fill: red;
+  }
+
+  svg.icon-archive {
+    fill: purple;
+  }
+}
+
+.CardList {
+  background-color: #E2E4E6;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 3px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    .CardList-actions {
+      opacity: 1;
+    }
+  }
+}
+
+.CardList-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.CardList-title {
+  font-weight: bold;
+  max-width: 200px;
+  line-height: 1.2;
+  cursor: pointer;
+  margin-right: 20px;
+
+  .editable-label__label {
+    &:hover {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-decoration-width: 2px;
+    }
+  }
+}
+
+.Cardlist-addCard {
+  color: #4d4d4d;
+  margin-top: 10px;
+  display: inline-block;
+}
