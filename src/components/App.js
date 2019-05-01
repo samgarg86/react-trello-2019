@@ -8,7 +8,7 @@ import BoardContainer from "../containers/BoardContainer";
 import About from "./About";
 
 const App = () =>
-    <Router>
+    <Router basename='/react-trello-2019/'>
         <div className="AppContainer">
             <div>
                 <Route exact path="/" render={(props) => <BoardContainer {...props} archived={false} />} />
