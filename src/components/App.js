@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter as Router, Link, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 import '../styles/core/reset.scss';
 import '../styles/App.scss';
 import HTML5Backend from 'react-dnd-html5-backend';
@@ -8,7 +8,7 @@ import BoardContainer from "../containers/BoardContainer";
 import About from "./About";
 
 const App = () =>
-    <Router>
+    <Router basename="/react-trello-2019">
         <div className="AppContainer">
             <div>
                 <Route exact path="/" render={(props) => <BoardContainer {...props} archived={false} />} />
