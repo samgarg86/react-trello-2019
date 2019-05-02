@@ -3,8 +3,18 @@ import FilterContainer from '../containers/FilterContainer';
 import '../styles/Header.scss';
 
 const Header = ({onAddNewList}) =>
-    <header className="Board-header">
-        <svg className="logo" viewBox="0 0 782 145">
+    <header className="app__header">
+        <div className="app__header__col">
+            <a href="#" className="app__header__button-new-list" onClick={onAddNewList}>
+                <span className="icon-plus">+</span>
+            </a>
+            <div className="app__header__filter">
+                <FilterContainer/>
+            </div>
+        </div>
+
+        <div class="app__header__col">
+            <svg className="app__header__logo" viewBox="0 0 782 145">
             <g stroke="none">
                 <g>
                     <g transform="translate(413.000000, 0.000000)">
@@ -20,10 +30,9 @@ const Header = ({onAddNewList}) =>
                 </g>
             </g>
         </svg>
-        <a href="#" className="button-new-list" onClick={onAddNewList}>
-            <span className="icon-plus">+</span>
-        </a>
-        <FilterContainer/>
+        </div>
+
+        <div className="app__header__col"></div>
     </header>;
 
 export default Header;

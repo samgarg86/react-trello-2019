@@ -9,14 +9,14 @@ import About from "./About";
 
 const App = () =>
     <Router basename="/react-trello-2019">
-        <div className="AppContainer">
+        <div className="app">
             <div>
                 <Route exact path="/" render={(props) => <BoardContainer {...props} archived={false} />} />
                 <Route path="/archived" render={(props) => <BoardContainer {...props} archived={true} />} />
                 <Route path="/about" component={About} />
             </div>
 
-            <nav className="App-footer">
+            <nav className="app__footer">
                 <Link to="/">Board</Link>
                 <Link to="/archived">Show Archived</Link>
                 <Link to="/about">About</Link>

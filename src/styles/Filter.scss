@@ -1,33 +1,30 @@
 @import "core/colors";
-.Filter {
+.filter {
   background-color: $primary3;
   border-radius: 2px;
-  position: absolute;
-  top: 4px;
-  left: 34px;
   display: flex;
   align-items: center;
-  padding: 0 5px;
 
   &::-webkit-input-placeholder {
     color: white;
     opacity: 0.5;
   }
 
-  &-input {
+  &__input {
     outline: none;
     border: none;
     display: inline-block;
-    height: 24px;
+    //height: 24px;
     width: 140px;
     font-size: inherit;
     color: white;
     background-color: transparent;
     margin-right: 5px;
+    padding: 5px;
   }
 
-  &-icon {
-    width: 20px;
+  &__icon {
+    width: 30px;
     height: 20px;
   }
 }

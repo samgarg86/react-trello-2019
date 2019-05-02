@@ -1,4 +1,4 @@
-.Card {
+.card {
   padding: 5px;
   border-radius: 2px;
   background-color: #FFFFFF;
@@ -9,7 +9,7 @@
     background-color: #efefef;
   }
 
-  .Card-title {
+  &__title {
     max-width: 200px;
     line-height: 1.2;
   }

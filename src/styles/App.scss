@@ -1,17 +1,19 @@
 @import "./core/colors";
-.AppContainer {
+.app {
   background-color: $primary1;
   width: 100vw;
   height: 100vh;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #4d4d4d;
-}
 
-nav.App-footer {
-  margin: 20px;
+  &__footer {
+    margin: 20px;
 
-  a {
-    padding: 5px 10px 5px 0;
-    color: white;
+    a {
+      padding: 5px 10px 5px 0;
+      color: white;
+    }
   }
 }
+
+

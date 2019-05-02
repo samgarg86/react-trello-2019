@@ -10,7 +10,7 @@ const BoardContainer = ({lists, addNewList, archived}) => {
     return (
         <div className="BoardContainer">
             <Header onAddNewList={addNewList}/>
-            <div className="CardListsContainer">
+            <div className="cards-list__container">
                 {lists
                     .filter(l => l.archived === archived)
                     .map((list, index) => <CardListContainer id={list.id} key={index}/>)}

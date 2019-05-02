@@ -66,17 +66,17 @@ class CardList extends React.Component  {
         }
 
         return connectDropTarget(
-            <div className="CardList" style={{backgroundColor}}>
-                <div className="CardList-header">
-                    <div className="CardList-title">
+            <div className="card-list" style={{backgroundColor}}>
+                <div className="card-list__header">
+                    <div className="card-list__title">
                         <EditableLabel text={title} onTextUpdated={onListTitleChanged} placeholder="New List" />
                     </div>
-                    <div className="CardList-actions" style={{display: archived ? 'none' : 'block'}}>
+                    <div className="card-list__actions" style={{display: archived ? 'none' : 'block'}}>
                         {/*<button title="Edit" className="list-edit" onClick={this.onClickEdit}><IconEdit/></button>*/}
                         <button title="Archive" className="list-archive" onClick={onClickArchive}><IconArchive/></button>
                         <button title="Delete" className="list-delete" onClick={onClickDelete}><IconDelete/></button>
                     </div>
-                    <div className="CardList-actions" style={{display: archived ? 'block' : 'none'}}>
+                    <div className="card-list__actions" style={{display: archived ? 'block' : 'none'}}>
                         <button title="Un Archive" className="list-un-archive" onClick={onClickUnArchive}>unarchive</button>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ class CardList extends React.Component  {
                     .filter((c) => c.title.toLowerCase().indexOf(filter.toLowerCase()) !== -1) // Filter the cards based on the filter string
                     .map((c, index) => <CardContainer key={index} id={c.id}/>) // Map to CardContainer
                 }
-                <a href="#" className="Cardlist-addCard" onClick={addNewCard}>+ Add a card</a>
+                <a href="#" className="card-list__add-card" onClick={addNewCard}>+ Add a card</a>
             </div>
         );
     }

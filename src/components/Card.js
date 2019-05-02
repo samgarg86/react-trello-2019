@@ -21,8 +21,8 @@ class Card extends React.Component {
     render() {
         const { title, connectDragSource, isDragging, onTitleChanged } = this.props;
         return connectDragSource(
-            <div className="Card" style={{opacity: isDragging ? 0.5 : 1}}>
-                <div className="Card-title">
+            <div className="card" style={{opacity: isDragging ? 0.5 : 1}}>
+                <div className="card__title">
                     {/**
                      * ....allowEmptySave={true}....
                      * The way it works is so if a user adds a card, action ADD_NEW_CARD will fire

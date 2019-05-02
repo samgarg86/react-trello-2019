@@ -1,8 +1,11 @@
-.CardListsContainer {
+.cards-list__container {
   width: 100%;
   height: 100%;
-  display: flex;
-  margin: 10px;
+  display: grid;
+  padding: 20px 10px;
   align-items: flex-start;
   min-height: 500px;
+  grid-auto-columns: minmax(auto, 250px);
+  grid-auto-flow: column;
+  grid-gap: 20px;
 }

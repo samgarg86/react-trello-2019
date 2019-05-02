@@ -1,12 +1,12 @@
-.About {
+.about {
   color: white;
   padding: 20px;
-}
 
-.About-text {
-  margin-bottom: 20px;
+  &__text {
+    margin-bottom: 20px;
 
-  p {
-    margin: 10px 0;
+    p {
+      margin: 10px 0;
+    }
   }
 }
